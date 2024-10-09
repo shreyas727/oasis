@@ -1,0 +1,118 @@
+/simple caculator by using html and css/
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:black;
+            
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsl(4, 25%, 45%);
+        }
+        .container {
+            position: relative;
+            max-width: 300px;
+            width: 100%;
+            border-radius: 12px;
+            padding: 10px 20px 20px;
+            background-color: aliceblue;
+        }
+        .keys {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .new {
+            height: 80px;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 25px;
+            outline: 0;
+            border: 0;
+            text-align: right;
+            color: #28282B;
+            box-shadow: 8px 8px 5px #242b3b;
+        }
+        button {
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 50%;
+            background-color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .op-btn {
+            color: white;
+            background-color: #4895ef;
+        }
+        .curved {
+            width: 60px;
+            height: px;
+            border-radius: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Basic Calculator</h1>
+        <input id="display" class="new" readonly>
+        <div class="keys">
+            <button onclick="appendToDisplay('/')" class="op-btn">/</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button>
+            <button onclick="appendToDisplay('')" class="op-btn"></button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('-')" class="op-btn">-</button>
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('+')" class="op-btn">+</button>
+            <button onclick="appendToDisplay('0')">0</button>
+            <button onclick="appendToDisplay('.')">.</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="clearDisplay()" class="op-btn">AC</button>
+            <button onclick="appendToDisplay('00')">00</button>
+            <button onclick="appendToDisplay('(')">(</button>
+            <button onclick="appendToDisplay(')')">)</button>
+        </div>
+    </div>
+    <script>
+        const display = document.getElementById("display");
+        function appendToDisplay(input) {
+            display.value += input;
+        }
+
+        function clearDisplay() {
+            display.value = "";
+        }
+
+        function calculate() {
+            try {
+                display.value = eval(display.value); 
+            } catch (error) {
+                display.value = "Error";
+            }
+        }
+    </script>
+</body>
+</html>

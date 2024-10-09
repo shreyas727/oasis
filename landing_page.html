@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" 
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        section {
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: white;
+        }
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .fff {
+            border-radius: 50%;
+        }
+        header .logo {
+            position: relative;
+            max-width: 80px;
+        }
+        header ul {
+            position: relative;
+            display: flex;
+        }
+        header ul li {
+            list-style: none;
+        }
+        header ul li a {
+            display: inline-block;
+            color: #333;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .content .textBox {
+            position: relative;
+            max-width: 600px;
+        }
+        .sizem {
+            color: #333;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+        .beauty {
+            color: brown;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+        .para {
+            color: #333;
+            font-size: 20px;
+        }
+        .arch {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background-color: #8B4513;
+            color: #fff;
+            border-radius: 40px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+        .come {
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+            margin-top: 50px;
+        }
+        .lll {
+            max-width: 340px;
+            mix-blend-mode: multiply;
+            background-color: white;
+            filter: contrast(1);
+            width: 500px;
+            height: 380px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #8B4513;
+            color: white;
+        }
+        footer p {
+            margin: 10px 0;
+        }
+        footer .social-icons i {
+            margin: 0 10px;
+            font-size: 18px;
+            color: white;
+        }
+        .anima{
+          color:black;
+         animation-name: example;
+          animation-duration: 10s;
+        }
+        @keyframes example {
+       0%   {color: black;}
+      25%  {color:#582f0e;}
+      50%  {color: #99582a;}
+      100% {color: #49111c;}
+}
+#bro{
+      
+  color:black;
+         animation-name: example;
+          animation-duration: 10s;
+        }
+        @keyframes example {
+       0%   {color: black;}
+      25%  {color:#582f0e;}
+      50%  {color: #99582a;}
+      100% {color: #49111c;}
+}
+
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#"><img src="coffe.png" class="logo fff" width="70" height="70"></a>
+            <ul>
+                <li><a href="#" class="anima" >Home</a></li>
+                <li><a href="#" class="anima" >Menu</a></li>
+                <li><a href="#" class="anima" >Anything New</a></li>
+                <li><a href="#" class="anima" >Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2 class="sizem" >It's not just a coffee<br>It's<span class="beauty"> Elixir</span></h2>
+                <p class="para" id="bro" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eveniet illo cupiditate non obcaecati magnam suscipit cumque laboriosam quia! Eius molestiae deserunt debitis? Id possimus ducimus inventore ipsa, nihil repellendus!</p>
+                <a href="#" class="arch">Learn More</a>
+            </div>
+            <div class="come">
+                <img src="happy.png" class="lll tran">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 All rights reserved | This template is made with <i class="fas fa-heart"></i> by patturi vinay</p>
+        <p class="social-icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+        </p>
+    </footer>
+</body>
+</html>
